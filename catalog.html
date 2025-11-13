@@ -26,25 +26,30 @@
                 </div>
             </header>
             <div class="promo__menu">
-                <h1>catalog</h1>
-                <h1>blog</h1>
-                <h1>about</h1>
+                <a href="index.html" class="menu-link">home</a>
+                <a href="notes.html" class="menu-link">blog</a>
+                <a href="began.html" class="menu-link">about</a>
             </div>
         </div>
         <div class="promo__text-last">
             our pottery
         </div>
         <div style="padding: 40px 120px;">
-            <input type="Enter your e-mail" placeholder="  for tea         for kitchen            for plants  "
-                style="text-transform: uppercase; width: 330px;" />
+            <div class="catalog-filters" style="display:flex;gap:12px;align-items:center;">
+                <button class="filter-btn" data-filter="tea">for tea</button>
+                <button class="filter-btn" data-filter="kitchen">for kitchen</button>
+                <button class="filter-btn" data-filter="plants">for plants</button>
+            </div>
         </div>
 
-        <div class="promo__container-flex-last">
-            <img src="/src/img/pottery/Product card.jpg" />
-            <img src="/src/img/pottery/Product card (1).jpg" />
-            <img src="/src/img/pottery/Product card (2).jpg" />
-            <img src="/src/img/pottery/Product card (3).jpg" />
+        <div class="promo__container-flex-last" id="product-list">
+            <div class="product-item" data-category="tea"><img src="/src/img/pottery/Product card.jpg" alt="product 1" /></div>
+            <div class="product-item" data-category="tea"><img src="/src/img/pottery/Product card (1).jpg" alt="product 2" /></div>
+            <div class="product-item" data-category="tea"><img src="/src/img/pottery/Product card (2).jpg" alt="product 3" /></div>
+            <div class="product-item" data-category="tea"><img src="/src/img/pottery/Product card (3).jpg" alt="product 4" /></div>
         </div>
+
+        <div id="no-results" style="display:none; text-align:center; padding:40px; color:#666;">No items for this filter</div>
 
     </section>
     <section class="promo__footer">
