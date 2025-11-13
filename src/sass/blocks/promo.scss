@@ -152,9 +152,10 @@
 
 	&__container {
 		display: grid;
-		grid-template-columns: 600px 900px;
+		grid-template-columns: minmax(260px, 40%) 1fr;
 		gap: 20px;
-		margin: auto;
+		max-width: 1400px;
+		margin: 0 auto;
 		padding: 40px;
 
 		@media (max-width: 1200px) {
@@ -181,9 +182,10 @@
 
 	&__container-getIn-touch {
 		display: grid;
-		grid-template-columns: 650px 750px;
+		grid-template-columns: 1fr 1fr;
 		gap: 20px;
-		margin: auto;
+		max-width: 1400px;
+		margin: 0 auto;
 		padding: 40px;
 
 		@media (max-width: 1200px) {
@@ -201,8 +203,9 @@
 	&__container-flex {
 		display: flex;
 		flex-wrap: wrap;
-		height: 200px;
-		width: 650px;
+		height: auto;
+		width: 100%;
+		max-width: 650px;
 
 		h1 {
 			width: 300px;
@@ -233,8 +236,9 @@
 
 	&__container-flex-last {
 		display: flex;
-		height: 300px;
-		width: 1400px;
+		height: auto;
+		width: 100%;
+		max-width: 1200px;
 		justify-content: center;
 		gap: 40px;
 		padding: 40px;
@@ -261,8 +265,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		height: 300px;
-		width: 1400px;
+		height: auto;
+		width: 100%;
+		max-width: 1400px;
 		gap: 40px;
 		padding: 40px;
 
@@ -276,18 +281,17 @@
 
 	&__footer-grid {
 		display: grid;
-		grid-template-columns: 100px 100px 100px;
-		grid-template-rows: 30px 30px 30px;
+		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
 		margin: auto;
-		padding: 40px;
+		padding: 20px;
 
 	}
 
 	&__began-grid {
 		display: grid;
-		grid-template-columns: 600px 750px;
-		grid-template-rows: 381px;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: auto;
 		padding: 40px;
 		gap: 20px;
 		align-items: start;
