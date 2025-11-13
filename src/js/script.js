@@ -34,6 +34,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    const burger = document.querySelector('.burger');
+    const mobileMenu = document.querySelector('.promo__menu');
+    if (burger && mobileMenu) {
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+            document.body.classList.toggle('menu-open');
+        });
+        mobileMenu.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', () => {
+                burger.classList.remove('open');
+                mobileMenu.classList.remove('open');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    }
 });
 document.addEventListener('DOMContentLoaded', function() {
     const filterBtns = document.querySelectorAll('.filter-btn');
