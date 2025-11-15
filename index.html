@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
 	<meta name="description" content="Website for Ceramic soul brand" />
 	<meta name="author" content="Awesome student" />
 	<title>Ceramic soul</title>
@@ -55,14 +55,14 @@
 			<h1 class="promo__text-grid">our store</h1>
 			<img src="/src/img/about/store.jpg" alt="store" />
 			<img src="/src/img/about/ceramic.jpg" alt="ceeramic" />
-			<h1 style="width: 556px;">Welcome to <span class="promo__accent">Ceramic Soul</span>, where each piece tells
+			<h1 class="promo__text-block">Welcome to <span class="promo__accent">Ceramic Soul</span>, where each piece tells
 				a story of craftsmanship and creativity. Our handmade
 				ceramics are thoughtfully designed and carefully crafted, blending traditional techniques with modern
 				aesthetics. Whether you're looking for a unique gift or a special addition to your home, our collection
 				offers timeless pieces that bring warmth and authenticity to any space.</h1>
-			<h1 style="width: 556px;">At <span class="promo__accent">Ceramic Soul</span> workshop, we don’t just craft
+			<h1 class="promo__text-block">At <span class="promo__accent">Ceramic Soul</span> workshop, we don't just craft
 				ceramics—we invite you to get hands-on and create your own
-				unique pieces. Through our engaging masterclasses, you’ll learn traditional techniques, work with
+				unique pieces. Through our engaging masterclasses, you'll learn traditional techniques, work with
 				natural materials, and experience the joy of shaping clay into something truly personal.</h1>
 		</div>
 	</section>
@@ -83,14 +83,14 @@
 						<h1>Email</h1>
 						<input type="email" placeholder="Email" />
 					</div>
-					<div style="padding-top: 30px;">
+					<div class="promo__input-full">
 						<h1>Your question</h1>
-						<input type="Your question" placeholder="Question" style="height: 132px;" />
+						<input type="Your question" placeholder="Question" class="promo__textarea" />
 					</div>
 				</div>
-				<div style="padding-top: 60px;" class="promo__container-flex-vase">
+				<div class="promo__container-flex-vase">
 					<div>
-						<input style="width: 15px; height: 15px; margin-bottom: 10px;" />
+						<input type="checkbox" class="promo__checkbox" />
 						I agree with the <span style="color: #A22DC6;">terms</span>
 						<button class="btn-default">send request</button>
 					</div>
@@ -134,32 +134,54 @@
 		</div>
 	</section>
 	<section class="promo__footer">
-		<div class="promo__footer-flex">
-			<div style="text-align: left;">
-				<h1 style="text-transform: uppercase;">newsletter</h1>
-				<h1>Keep up to date with news and promotions</h1>
-				<input type="Enter your e-mail" placeholder="Enter your e-mail" style="background-color: #232323;" />
-				<input style="width: 15px; height: 15px; margin-bottom: 10px;" />
-				I agree with the <span style="color: #A22DC6;">terms</span>
-				<button class="btn-default" style="background-color:bisque;">SUBMIT</button>
-			</div>
+		<div class="promo__footer-container">
+			<div class="promo__footer-content">
+				<div class="promo__footer-newsletter">
+					<h2 class="promo__footer-title">newsletter</h2>
+					<p class="promo__footer-text">Keep up to date with news and promotions</p>
+					<input type="email" placeholder="Enter your e-mail" class="promo__footer-input" />
+					<label class="promo__footer-checkbox-wrapper" for="footer-terms">
+						<input type="checkbox" class="promo__checkbox" id="footer-terms" />
+						<span>I agree with the <span class="promo__footer-link">terms</span></span>
+					</label>
+					<button class="btn-default promo__footer-btn">SUBMIT</button>
+				</div>
 
-			<div class="promo__footer-grid">
-				<h1 style="text-transform: uppercase;">discover</h1>
-				<h1 style="text-transform: uppercase;">shopping</h1>
-				<h1 style="text-transform: uppercase;">shopping</h1>
-				<h1>About Us</h1>
-				<h1>Catalog</h1>
-				<h1>Terms and Conditions</h1>
-				<h1>Blog</h1>
-			</div>
+				<div class="promo__footer-links">
+					<div class="promo__footer-link-column">
+						<h2 class="promo__footer-title">discover</h2>
+						<a href="began.html" class="promo__footer-link-item">About Us</a>
+						<a href="notes.html" class="promo__footer-link-item">Blog</a>
+					</div>
+					<div class="promo__footer-link-column">
+						<h2 class="promo__footer-title">shopping</h2>
+						<a href="catalog.html" class="promo__footer-link-item">Catalog</a>
+					</div>
+					<div class="promo__footer-link-column">
+						<h2 class="promo__footer-title">information</h2>
+						<a href="#" class="promo__footer-link-item">Terms and Conditions</a>
+					</div>
+				</div>
 
-			<div style="width: 100px; display: flex; flex-direction: column; align-items: center;">
-				<h1 style="text-transform: uppercase; margin: 0 0 10px 0;">follow us</h1>
-				<img src="/src/img/follow/facebook.png" />
+				<div class="promo__footer-follow">
+					<h2 class="promo__footer-title">follow us</h2>
+					<div class="promo__footer-social">
+						<a href="#" class="promo__footer-social-link">
+							<img src="/src/img/follow/facebook.png" alt="Facebook" />
+						</a>
+						<a href="#" class="promo__footer-social-link">
+							<img src="/src/img/follow/facebook.png" alt="Instagram" />
+						</a>
+						<a href="#" class="promo__footer-social-link">
+							<img src="/src/img/follow/facebook.png" alt="Pinterest" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="promo__footer-copyright">
+				<p>© Copyright 2025, Ceramic soul</p>
 			</div>
 		</div>
-
 	</section>
 
 	<script type="module" src="/src/js/script.js"></script>

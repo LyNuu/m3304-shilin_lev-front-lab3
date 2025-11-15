@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <meta name="description" content="Website for Ceramic soul brand" />
     <meta name="author" content="Awesome student" />
     <title>Ceramic soul</title>
@@ -42,32 +42,54 @@
 
     </section>
     <section class="promo__footer">
-        <div class="promo__footer-flex">
-            <div style="text-align: left;">
-                <h1 style="text-transform: uppercase;">newsletter</h1>
-                <h1>Keep up to date with news and promotions</h1>
-                <input type="Enter your e-mail" placeholder="Enter your e-mail" style="background-color: #232323;" />
-                <input style="width: 15px; height: 15px; margin-bottom: 10px;" />
-                I agree with the <span style="color: #A22DC6;">terms</span>
-                <button class="btn-default" style="background-color:bisque;">SUBMIT</button>
-            </div>
+        <div class="promo__footer-container">
+            <div class="promo__footer-content">
+                <div class="promo__footer-newsletter">
+                    <h2 class="promo__footer-title">newsletter</h2>
+                    <p class="promo__footer-text">Keep up to date with news and promotions</p>
+                    <input type="email" placeholder="Enter your e-mail" class="promo__footer-input" />
+                    <label class="promo__footer-checkbox-wrapper" for="footer-terms-notes">
+                        <input type="checkbox" class="promo__checkbox" id="footer-terms-notes" />
+                        <span>I agree with the <span class="promo__footer-link">terms</span></span>
+                    </label>
+                    <button class="btn-default promo__footer-btn">SUBMIT</button>
+                </div>
 
-            <div class="promo__footer-grid">
-                <h1 style="text-transform: uppercase;">discover</h1>
-                <h1 style="text-transform: uppercase;">shopping</h1>
-                <h1 style="text-transform: uppercase;">shopping</h1>
-                <h1>About Us</h1>
-                <h1>Catalog</h1>
-                <h1>Terms and Conditions</h1>
-                <h1>Blog</h1>
-            </div>
+                <div class="promo__footer-links">
+                    <div class="promo__footer-link-column">
+                        <h2 class="promo__footer-title">discover</h2>
+                        <a href="began.html" class="promo__footer-link-item">About Us</a>
+                        <a href="notes.html" class="promo__footer-link-item">Blog</a>
+                    </div>
+                    <div class="promo__footer-link-column">
+                        <h2 class="promo__footer-title">shopping</h2>
+                        <a href="catalog.html" class="promo__footer-link-item">Catalog</a>
+                    </div>
+                    <div class="promo__footer-link-column">
+                        <h2 class="promo__footer-title">information</h2>
+                        <a href="#" class="promo__footer-link-item">Terms and Conditions</a>
+                    </div>
+                </div>
 
-            <div style="width: 100px; display: flex; flex-direction: column; align-items: center;">
-                <h1 style="text-transform: uppercase; margin: 0 0 10px 0;">follow us</h1>
-                <img src="/src/img/follow/facebook.png" />
+                <div class="promo__footer-follow">
+                    <h2 class="promo__footer-title">follow us</h2>
+                    <div class="promo__footer-social">
+                        <a href="#" class="promo__footer-social-link">
+                            <img src="/src/img/follow/facebook.png" alt="Facebook" />
+                        </a>
+                        <a href="#" class="promo__footer-social-link">
+                            <img src="/src/img/follow/facebook.png" alt="Instagram" />
+                        </a>
+                        <a href="#" class="promo__footer-social-link">
+                            <img src="/src/img/follow/facebook.png" alt="Pinterest" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="promo__footer-copyright">
+                <p>© Copyright 2025, Ceramic soul</p>
             </div>
         </div>
-
     </section>
     <script type="module" src="/src/js/script.js"></script>
 </body>

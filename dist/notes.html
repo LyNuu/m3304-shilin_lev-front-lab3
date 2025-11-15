@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <meta name="description" content="Website for Ceramic soul brand" />
     <meta name="author" content="Awesome student" />
     <title>Ceramic soul</title>
@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet" />
-  <script type="module" crossorigin src="/assets/script-i7LM-EQf.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/script-CHQSaNdf.css">
+  <script type="module" crossorigin src="/assets/script-CJTCraWS.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/script-B5OyRMtb.css">
 </head>
 
 <body>
@@ -44,32 +44,54 @@
 
     </section>
     <section class="promo__footer">
-        <div class="promo__footer-flex">
-            <div style="text-align: left;">
-                <h1 style="text-transform: uppercase;">newsletter</h1>
-                <h1>Keep up to date with news and promotions</h1>
-                <input type="Enter your e-mail" placeholder="Enter your e-mail" style="background-color: #232323;" />
-                <input style="width: 15px; height: 15px; margin-bottom: 10px;" />
-                I agree with the <span style="color: #A22DC6;">terms</span>
-                <button class="btn-default" style="background-color:bisque;">SUBMIT</button>
-            </div>
+        <div class="promo__footer-container">
+            <div class="promo__footer-content">
+                <div class="promo__footer-newsletter">
+                    <h2 class="promo__footer-title">newsletter</h2>
+                    <p class="promo__footer-text">Keep up to date with news and promotions</p>
+                    <input type="email" placeholder="Enter your e-mail" class="promo__footer-input" />
+                    <label class="promo__footer-checkbox-wrapper" for="footer-terms-notes">
+                        <input type="checkbox" class="promo__checkbox" id="footer-terms-notes" />
+                        <span>I agree with the <span class="promo__footer-link">terms</span></span>
+                    </label>
+                    <button class="btn-default promo__footer-btn">SUBMIT</button>
+                </div>
 
-            <div class="promo__footer-grid">
-                <h1 style="text-transform: uppercase;">discover</h1>
-                <h1 style="text-transform: uppercase;">shopping</h1>
-                <h1 style="text-transform: uppercase;">shopping</h1>
-                <h1>About Us</h1>
-                <h1>Catalog</h1>
-                <h1>Terms and Conditions</h1>
-                <h1>Blog</h1>
-            </div>
+                <div class="promo__footer-links">
+                    <div class="promo__footer-link-column">
+                        <h2 class="promo__footer-title">discover</h2>
+                        <a href="began.html" class="promo__footer-link-item">About Us</a>
+                        <a href="notes.html" class="promo__footer-link-item">Blog</a>
+                    </div>
+                    <div class="promo__footer-link-column">
+                        <h2 class="promo__footer-title">shopping</h2>
+                        <a href="catalog.html" class="promo__footer-link-item">Catalog</a>
+                    </div>
+                    <div class="promo__footer-link-column">
+                        <h2 class="promo__footer-title">information</h2>
+                        <a href="#" class="promo__footer-link-item">Terms and Conditions</a>
+                    </div>
+                </div>
 
-            <div style="width: 100px; display: flex; flex-direction: column; align-items: center;">
-                <h1 style="text-transform: uppercase; margin: 0 0 10px 0;">follow us</h1>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB3ZVtDYMwEIavywTUwXCwSZgEJCABB8wBOJiEIWEOxhSUKZiE2zWF0DTXDzp+8SSXkPa9e1vaXAF2DSJKipriQaFw4TWNVZALJZcUX4yjVhtRQovraVKLN5hPGyteRQp0FIWT41KGDFSg+N2T46LPTeas/pJooKnn+YOl9W+NEEIM3E498itncIJ0isj8ef4QsKwKQxm0g2StrT+mCnPN7F/0ge0YOYMBtuPNGTw5JXdb7PsIPD1XSGKgufkMGBT4QNNB/zWoIASafpNrcIMUtDDDoIM1oOlNKsFAn1sJuUxGvTM26jE0z6mEXfMDZ7Cu3afY3tsAAAAASUVORK5CYII=" />
+                <div class="promo__footer-follow">
+                    <h2 class="promo__footer-title">follow us</h2>
+                    <div class="promo__footer-social">
+                        <a href="#" class="promo__footer-social-link">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB3ZVtDYMwEIavywTUwXCwSZgEJCABB8wBOJiEIWEOxhSUKZiE2zWF0DTXDzp+8SSXkPa9e1vaXAF2DSJKipriQaFw4TWNVZALJZcUX4yjVhtRQovraVKLN5hPGyteRQp0FIWT41KGDFSg+N2T46LPTeas/pJooKnn+YOl9W+NEEIM3E498itncIJ0isj8ef4QsKwKQxm0g2StrT+mCnPN7F/0ge0YOYMBtuPNGTw5JXdb7PsIPD1XSGKgufkMGBT4QNNB/zWoIASafpNrcIMUtDDDoIM1oOlNKsFAn1sJuUxGvTM26jE0z6mEXfMDZ7Cu3afY3tsAAAAASUVORK5CYII=" alt="Facebook" />
+                        </a>
+                        <a href="#" class="promo__footer-social-link">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB3ZVtDYMwEIavywTUwXCwSZgEJCABB8wBOJiEIWEOxhSUKZiE2zWF0DTXDzp+8SSXkPa9e1vaXAF2DSJKipriQaFw4TWNVZALJZcUX4yjVhtRQovraVKLN5hPGyteRQp0FIWT41KGDFSg+N2T46LPTeas/pJooKnn+YOl9W+NEEIM3E498itncIJ0isj8ef4QsKwKQxm0g2StrT+mCnPN7F/0ge0YOYMBtuPNGTw5JXdb7PsIPD1XSGKgufkMGBT4QNNB/zWoIASafpNrcIMUtDDDoIM1oOlNKsFAn1sJuUxGvTM26jE0z6mEXfMDZ7Cu3afY3tsAAAAASUVORK5CYII=" alt="Instagram" />
+                        </a>
+                        <a href="#" class="promo__footer-social-link">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB3ZVtDYMwEIavywTUwXCwSZgEJCABB8wBOJiEIWEOxhSUKZiE2zWF0DTXDzp+8SSXkPa9e1vaXAF2DSJKipriQaFw4TWNVZALJZcUX4yjVhtRQovraVKLN5hPGyteRQp0FIWT41KGDFSg+N2T46LPTeas/pJooKnn+YOl9W+NEEIM3E498itncIJ0isj8ef4QsKwKQxm0g2StrT+mCnPN7F/0ge0YOYMBtuPNGTw5JXdb7PsIPD1XSGKgufkMGBT4QNNB/zWoIASafpNrcIMUtDDDoIM1oOlNKsFAn1sJuUxGvTM26jE0z6mEXfMDZ7Cu3afY3tsAAAAASUVORK5CYII=" alt="Pinterest" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="promo__footer-copyright">
+                <p>© Copyright 2025, Ceramic soul</p>
             </div>
         </div>
-
     </section>
 </body>
 

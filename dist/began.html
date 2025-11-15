@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
     <meta name="description" content="Website for Ceramic soul brand" />
     <meta name="author" content="Awesome student" />
     <title>Ceramic soul</title>
@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet" />
-  <script type="module" crossorigin src="/assets/script-i7LM-EQf.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/script-CHQSaNdf.css">
+  <script type="module" crossorigin src="/assets/script-CJTCraWS.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/script-B5OyRMtb.css">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
             where it all began
         </div>
         <div class="promo__began-grid">
-            <img src="/assets/crafts-5276736_1280%201-DEWsSkwQ.jpg" style="width: 550px; height: 350px;" />
+            <img src="/assets/crafts-5276736_1280%201-DEWsSkwQ.jpg" class="promo__began-img" />
             <pre style="white-space: pre-wrap; text-align: left; margin: 0;">
 Our small pottery workshop began as a simple passion project, rooted in a love for handmade artistry and traditional craftsmanship. What started with a single wheel and a few lumps of clay has grown into a cozy creative space where ideas take shape and stories are told through every piece. Inspired by timeless techniques and the beauty of natural materials, we’ve built a place where both beginners and experienced artists can come together, share their skills, and celebrate the art of pottery. Each creation reflects our journey—shaped by hand, fired with care, and made to be cherished.
 
@@ -64,14 +64,14 @@ Every piece that leaves our studio carries a bit of our story, blending traditio
                         <h1>Email</h1>
                         <input type="email" placeholder="Email" />
                     </div>
-                    <div style="padding-top: 30px;">
+                    <div class="promo__input-full">
                         <h1>Your question</h1>
-                        <input type="Your question" placeholder="Question" style="height: 132px;" />
+                        <input type="Your question" placeholder="Question" class="promo__textarea" />
                     </div>
                 </div>
-                <div style="padding-top: 60px;" class="promo__container-flex-vase">
+                <div class="promo__container-flex-vase">
                     <div>
-                        <input style="width: 15px; height: 15px; margin-bottom: 10px;" />
+                        <input type="checkbox" class="promo__checkbox" />
                         I agree with the <span style="color: #A22DC6;">terms</span>
                         <button class="btn-default">send request</button>
                     </div>
@@ -87,43 +87,66 @@ Every piece that leaves our studio carries a bit of our story, blending traditio
         <div class="promo__text-last">
             Find us
         </div>
-        <div style="position:relative;overflow:hidden;text-align: center;"><a
-                href="https://yandex.by/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-                style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-                href="https://yandex.by/maps/2/saint-petersburg/house/kronverkskiy_prospekt_49/Z0kYdQZgSUQGQFtjfXV0d39lZw==/?ll=30.310011%2C59.956363&utm_medium=mapframe&utm_source=maps&z=16.87"
-                style="color:#eee;font-size:12px;position:absolute;top:14px;">Навигатор онлайн: построение маршрута на
-                карте — Яндекс Карты</a><iframe
+        <div class="promo__map-container">
+            <a href="https://yandex.by/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+                class="promo__map-link">Санкт‑Петербург</a>
+            <a href="https://yandex.by/maps/2/saint-petersburg/house/kronverkskiy_prospekt_49/Z0kYdQZgSUQGQFtjfXV0d39lZw==/?ll=30.310011%2C59.956363&utm_medium=mapframe&utm_source=maps&z=16.87"
+                class="promo__map-link promo__map-link-second">Навигатор онлайн: построение маршрута на
+                карте — Яндекс Карты</a>
+            <iframe
                 src="https://yandex.by/map-widget/v1/?ll=30.310011%2C59.956363&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQxMjY4NRJa0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JrRgNC-0L3QstC10YDQutGB0LrQuNC5INC_0YDQvtGB0L_QtdC60YIsIDQ5IgoN6XryQRVR029C&z=16.87"
-                width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                class="promo__map-iframe" frameborder="1" allowfullscreen="true"></iframe>
         </div>
     </section>
     <section class="promo__footer">
-        <div class="promo__footer-flex">
-            <div style="text-align: left;">
-                <h1 style="text-transform: uppercase;">newsletter</h1>
-                <h1>Keep up to date with news and promotions</h1>
-                <input type="Enter your e-mail" placeholder="Enter your e-mail" style="background-color: #232323;" />
-                <input style="width: 15px; height: 15px; margin-bottom: 10px;" />
-                I agree with the <span style="color: #A22DC6;">terms</span>
-                <button class="btn-default" style="background-color:bisque;">SUBMIT</button>
-            </div>
+        <div class="promo__footer-container">
+            <div class="promo__footer-content">
+                <div class="promo__footer-newsletter">
+                    <h2 class="promo__footer-title">newsletter</h2>
+                    <p class="promo__footer-text">Keep up to date with news and promotions</p>
+                    <input type="email" placeholder="Enter your e-mail" class="promo__footer-input" />
+                    <label class="promo__footer-checkbox-wrapper" for="footer-terms-began">
+                        <input type="checkbox" class="promo__checkbox" id="footer-terms-began" />
+                        <span>I agree with the <span class="promo__footer-link">terms</span></span>
+                    </label>
+                    <button class="btn-default promo__footer-btn">SUBMIT</button>
+                </div>
 
-            <div class="promo__footer-grid">
-                <h1 style="text-transform: uppercase;">discover</h1>
-                <h1 style="text-transform: uppercase;">shopping</h1>
-                <h1 style="text-transform: uppercase;">shopping</h1>
-                <h1>About Us</h1>
-                <h1>Catalog</h1>
-                <h1>Terms and Conditions</h1>
-                <h1>Blog</h1>
-            </div>
+                <div class="promo__footer-links">
+                    <div class="promo__footer-link-column">
+                        <h2 class="promo__footer-title">discover</h2>
+                        <a href="began.html" class="promo__footer-link-item">About Us</a>
+                        <a href="notes.html" class="promo__footer-link-item">Blog</a>
+                    </div>
+                    <div class="promo__footer-link-column">
+                        <h2 class="promo__footer-title">shopping</h2>
+                        <a href="catalog.html" class="promo__footer-link-item">Catalog</a>
+                    </div>
+                    <div class="promo__footer-link-column">
+                        <h2 class="promo__footer-title">information</h2>
+                        <a href="#" class="promo__footer-link-item">Terms and Conditions</a>
+                    </div>
+                </div>
 
-            <div style="width: 100px; display: flex; flex-direction: column; align-items: center;">
-                <h1 style="text-transform: uppercase; margin: 0 0 10px 0;">follow us</h1>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB3ZVtDYMwEIavywTUwXCwSZgEJCABB8wBOJiEIWEOxhSUKZiE2zWF0DTXDzp+8SSXkPa9e1vaXAF2DSJKipriQaFw4TWNVZALJZcUX4yjVhtRQovraVKLN5hPGyteRQp0FIWT41KGDFSg+N2T46LPTeas/pJooKnn+YOl9W+NEEIM3E498itncIJ0isj8ef4QsKwKQxm0g2StrT+mCnPN7F/0ge0YOYMBtuPNGTw5JXdb7PsIPD1XSGKgufkMGBT4QNNB/zWoIASafpNrcIMUtDDDoIM1oOlNKsFAn1sJuUxGvTM26jE0z6mEXfMDZ7Cu3afY3tsAAAAASUVORK5CYII=" />
+                <div class="promo__footer-follow">
+                    <h2 class="promo__footer-title">follow us</h2>
+                    <div class="promo__footer-social">
+                        <a href="#" class="promo__footer-social-link">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB3ZVtDYMwEIavywTUwXCwSZgEJCABB8wBOJiEIWEOxhSUKZiE2zWF0DTXDzp+8SSXkPa9e1vaXAF2DSJKipriQaFw4TWNVZALJZcUX4yjVhtRQovraVKLN5hPGyteRQp0FIWT41KGDFSg+N2T46LPTeas/pJooKnn+YOl9W+NEEIM3E498itncIJ0isj8ef4QsKwKQxm0g2StrT+mCnPN7F/0ge0YOYMBtuPNGTw5JXdb7PsIPD1XSGKgufkMGBT4QNNB/zWoIASafpNrcIMUtDDDoIM1oOlNKsFAn1sJuUxGvTM26jE0z6mEXfMDZ7Cu3afY3tsAAAAASUVORK5CYII=" alt="Facebook" />
+                        </a>
+                        <a href="#" class="promo__footer-social-link">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB3ZVtDYMwEIavywTUwXCwSZgEJCABB8wBOJiEIWEOxhSUKZiE2zWF0DTXDzp+8SSXkPa9e1vaXAF2DSJKipriQaFw4TWNVZALJZcUX4yjVhtRQovraVKLN5hPGyteRQp0FIWT41KGDFSg+N2T46LPTeas/pJooKnn+YOl9W+NEEIM3E498itncIJ0isj8ef4QsKwKQxm0g2StrT+mCnPN7F/0ge0YOYMBtuPNGTw5JXdb7PsIPD1XSGKgufkMGBT4QNNB/zWoIASafpNrcIMUtDDDoIM1oOlNKsFAn1sJuUxGvTM26jE0z6mEXfMDZ7Cu3afY3tsAAAAASUVORK5CYII=" alt="Instagram" />
+                        </a>
+                        <a href="#" class="promo__footer-social-link">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB3ZVtDYMwEIavywTUwXCwSZgEJCABB8wBOJiEIWEOxhSUKZiE2zWF0DTXDzp+8SSXkPa9e1vaXAF2DSJKipriQaFw4TWNVZALJZcUX4yjVhtRQovraVKLN5hPGyteRQp0FIWT41KGDFSg+N2T46LPTeas/pJooKnn+YOl9W+NEEIM3E498itncIJ0isj8ef4QsKwKQxm0g2StrT+mCnPN7F/0ge0YOYMBtuPNGTw5JXdb7PsIPD1XSGKgufkMGBT4QNNB/zWoIASafpNrcIMUtDDDoIM1oOlNKsFAn1sJuUxGvTM26jE0z6mEXfMDZ7Cu3afY3tsAAAAASUVORK5CYII=" alt="Pinterest" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="promo__footer-copyright">
+                <p>© Copyright 2025, Ceramic soul</p>
             </div>
         </div>
-
     </section>
 </body>
 
