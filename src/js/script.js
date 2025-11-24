@@ -4,15 +4,22 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { initNavigation } from './navigation.js';
 
-document.addEventListener('DOMContentLoaded', function() {
-    const slider = document.querySelector('.promo__slider');
+initNavigation();
+
+let swiperInstance = null;
+
+function initSwiper() {
+    const swiperContainer = document.querySelector('.mySwiper');
+    if (!swiperContainer) return;
     
-    setTimeout(() => {
-        slider.classList.add('active');
-    }, 500);
-
-    const swiper = new Swiper('.mySwiper', {
+    if (swiperInstance) {
+        swiperInstance.destroy(true, true);
+        swiperInstance = null;
+    }
+    
+    swiperInstance = new Swiper('.mySwiper', {
         modules: [Navigation, Pagination],
         loop: true,
         pagination: {
@@ -34,6 +41,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+}
+
+function initSlider() {
+    const slider = document.querySelector('.promo__slider');
+    if (slider) {
+        setTimeout(() => {
+            slider.classList.add('active');
+        }, 500);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initSlider();
+    initSwiper();
 
     const burger = document.querySelector('.burger');
     const mobileMenu = document.querySelector('.promo__menu');
@@ -52,13 +73,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-document.addEventListener('DOMContentLoaded', function() {
+function initFilters() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const productList = document.getElementById('product-list');
     const products = productList ? Array.from(productList.querySelectorAll('.product-item')) : [];
     const noResults = document.getElementById('no-results');
 
-    if (!filterBtns || !productList) return;
+    if (!filterBtns.length || !productList) return;
+
+    filterBtns.forEach(btn => {
+        const newBtn = btn.cloneNode(true);
+        btn.parentNode.replaceChild(newBtn, btn);
+    });
+
+    const newFilterBtns = document.querySelectorAll('.filter-btn');
 
     function applyFilter(filter) {
         if (filter === 'tea') {
@@ -70,18 +98,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    filterBtns.forEach(btn => {
+    newFilterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const f = btn.getAttribute('data-filter');
-            filterBtns.forEach(b => b.classList.remove('active'));
+            newFilterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             applyFilter(f);
         });
     });
 
-    const defaultBtn = Array.from(filterBtns).find(b => b.getAttribute('data-filter') === 'tea');
+    const defaultBtn = Array.from(newFilterBtns).find(b => b.getAttribute('data-filter') === 'tea');
     if (defaultBtn) {
         defaultBtn.classList.add('active');
         applyFilter('tea');
     }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    initFilters();
+});
+
+document.addEventListener('catalogLoaded', function() {
+    initFilters();
+});
+
+document.addEventListener('pageUpdated', function() {
+    initSlider();
+    initSwiper();
+    initFilters();
 });
